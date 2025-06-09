@@ -11,4 +11,5 @@ public enum ItemName
    Captus,
    Stone,
    Wood,
+   Loog,
 }

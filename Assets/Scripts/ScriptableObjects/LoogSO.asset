@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 1
   icon: {fileID: 21300000, guid: 099025b3326e65149ac1ba3524122e08, type: 3}
-  itenName: 8
+  itenName: 9
   isStackable: 1
   prefab: {fileID: 2611093366703231673, guid: 8a2c8b5bf68e8e44ab759eb856c41562, type: 3}
   isConsumeable: 0

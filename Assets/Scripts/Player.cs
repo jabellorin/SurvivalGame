@@ -369,14 +369,17 @@ public class Player : MonoBehaviour {
     public void SetHandObject(ItemName itemName) {
 
         Transform itemToSet=null;
+        ItemName name=ItemName.None;
         foreach (Transform item in handObjects) {
             if (itemName == item.GetComponent<HandObject>().itemName) {
                 itemToSet = item;
+                name = itemName;
             }
             item.gameObject.SetActive(false);
         }
 
         itemToSet.gameObject.SetActive(true);
+        Player.Instance.currentItem = name;
 
     }
 }

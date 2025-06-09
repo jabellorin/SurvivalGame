@@ -18,10 +18,15 @@ public class SlotUI : MonoBehaviour
                 if (item is Food food) {
                   
                     Player.Instance.EatFood(food.hungerTimer,food.healthAdded);
-                    Player.Instance.DecreaseConsumableItem(item);
+                    Player.Instance.ReduceItemFromInventory(item.itenName,1);
                     inventoryUI.CreateInventory();
 
                 }
+
+            }
+            else if (item != null && item is Weapon) {
+                Player.Instance.SetHandObject(item.itenName);
+
             }
         });
     }

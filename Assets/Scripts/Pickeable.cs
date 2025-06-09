@@ -17,9 +17,15 @@ public class Pickeable : MonoBehaviour
            
             
             Item item = GameManager.Instance.GetItemByName(itemName);
-            Player.Instance.AddInventoryItem(item);
+            if (item!=null) {
+                Player.Instance.AddInventoryItem(item);
+            }
+            else {
+                Debug.Log("item is null" + item);
+            }
 
-            Destroy(gameObject);
+
+                Destroy(gameObject);
         }
     }
 

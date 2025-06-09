@@ -37,6 +37,8 @@ public class Player : MonoBehaviour {
     [SerializeField] private float maxTemperatureTimer = 120f;
     [SerializeField] private float damageRateWhenIsCold = 0.2f;
     [SerializeField] private Material selectableMaterial;
+    [SerializeField] private Transform handObjects;
+
 
     private bool isHungry = false;
     private bool isThirsty = false;
@@ -349,10 +351,10 @@ public class Player : MonoBehaviour {
     }
 
 
-    public void DecreaseConsumableItem(Item item) {
+    public void ReduceItemFromInventory(ItemName item,int amount) {
 
-      InventoryItem inventoryItem =  inventoryList.FirstOrDefault(s => s.baseItem.itenName == item.itenName);
-        inventoryItem.stackCount--;
+      InventoryItem inventoryItem =  inventoryList.FirstOrDefault(s => s.baseItem.itenName == item);
+        inventoryItem.stackCount-=amount;
         if (inventoryItem.stackCount==0) {
             inventoryList.Remove(inventoryItem);
         }
@@ -361,6 +363,21 @@ public class Player : MonoBehaviour {
 
     public void AddHealt(int amount) {
         Health += amount;
+    }
+
+
+    public void SetHandObject(ItemName itemName) {
+
+        Transform itemToSet=null;
+        foreach (Transform item in handObjects) {
+            if (itemName == item.GetComponent<HandObject>().itemName) {
+                itemToSet = item;
+            }
+            item.gameObject.SetActive(false);
+        }
+
+        itemToSet.gameObject.SetActive(true);
+
     }
 }
       

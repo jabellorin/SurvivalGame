@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\InventoryUI.cs" />
     <Compile Include="Assets\Scripts\ItemDrop.cs" />
+    <Compile Include="Assets\Scripts\HandObject.cs" />
     <Compile Include="Assets\Scripts\WoodUI.cs" />
     <Compile Include="Assets\Scripts\Food.cs" />
     <Compile Include="Assets\Scripts\SpineProxy.cs" />

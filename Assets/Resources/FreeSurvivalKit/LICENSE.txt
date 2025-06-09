@@ -1,0 +1,17 @@
+Asset Usage License
+
+1. Permissions:
+-This asset may be used in commercial or personal projects without additional payment after purchase.
+-You may modify, adapt or alter the asset as necessary to meet the requirements of your project.
+-The asset (modified or not) may be included in final products (such as games, applications, movies, etc.), as long as it is not distributed in a way that allows extraction or independent use.
+
+2. Restrictions:
+-It is prohibited to resell this asset, in its original or modified form, as part of a package or as an individual item.
+-You may not share, redistribute or make the asset publicly accessible, whether in its original or modified form, except as part of an integrated final product.
+-The asset may not be used to create competing products, such as development kits or similar tools.
+
+3. The copyright of the asset remains with the original creator. The purchase grants the user a license to use, not the transfer of ownership. The creator is not responsible for any damages or problems arising from the use of this asset.
+
+4.By purchasing and using this asset, you agree to the terms set forth in this license. If you disagree, do not use the asset and contact the creator.
+
+5.Thank you for purchasing our asset. Your support helps us continue creating content for the developer community. We wish you good progress with your projects!

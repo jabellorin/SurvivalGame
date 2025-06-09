@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c4d243bdb72d1f4fa937f9a113e8cf7, type: 3}
+  m_Name: Mushroom
+  m_EditorClassIdentifier: 
+  amount: 1
+  icon: {fileID: 21300000, guid: 95a25a1edee739a4d8e675408170a0ce, type: 3}
+  itenName: 5
+  isStackable: 1
+  prefab: {fileID: 4144160447750452413, guid: 4f768f885991d5e4691bff95f63f8071, type: 3}
+  isConsumeable: 1
+  spoilTimer: 6000
+  hungerTimer: 10
+  healthAdded: 5

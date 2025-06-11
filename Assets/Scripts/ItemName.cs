@@ -12,5 +12,6 @@ public enum ItemName
    Stone,
    Wood,
    Loog,
-   Bucket
+   Bucket,
+   Stick
 }

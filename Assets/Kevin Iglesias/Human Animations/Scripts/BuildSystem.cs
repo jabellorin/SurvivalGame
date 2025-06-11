@@ -98,7 +98,8 @@ public class BuildSystem : MonoBehaviour {
         BuildItem(ItemName.Bucket, new List<CraftItem>
          {
             new CraftItem(1, ItemName.Stone, true),
-           // new CraftItem(2, ItemName.Loog, true),
+            new CraftItem(10, ItemName.Loog, true),
+            new CraftItem(10, ItemName.Stick, true),
          });
     }
 

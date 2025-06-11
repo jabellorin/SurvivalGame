@@ -12,7 +12,7 @@ GameObject:
   m_Layer: 0
   m_Name: Rio
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -204,7 +204,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2813497683323869638, guid: c0fef4270abf2e04aab8f6878f6b2ccc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.29
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2813497683323869638, guid: c0fef4270abf2e04aab8f6878f6b2ccc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -212,7 +212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2813497683323869638, guid: c0fef4270abf2e04aab8f6878f6b2ccc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.34
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2813497683323869638, guid: c0fef4270abf2e04aab8f6878f6b2ccc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -249,6 +249,18 @@ PrefabInstance:
     - target: {fileID: 3188651409710449532, guid: c0fef4270abf2e04aab8f6878f6b2ccc, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968241350866392932, guid: c0fef4270abf2e04aab8f6878f6b2ccc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968241350866392932, guid: c0fef4270abf2e04aab8f6878f6b2ccc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.019347943
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968241350866392932, guid: c0fef4270abf2e04aab8f6878f6b2ccc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.87193084
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

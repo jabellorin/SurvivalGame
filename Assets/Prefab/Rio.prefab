@@ -53,6 +53,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 24fc2c3e62c52bf4e9e63fd980b8e85d, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 919132149155446097, guid: 24fc2c3e62c52bf4e9e63fd980b8e85d, type: 3}
       propertyPath: m_Name
       value: Rio
       objectReference: {fileID: 0}
@@ -105,6 +109,14 @@ MonoBehaviour:
   temperatureTimer: 0
   maxTemperatureTimer: 120
   damageRateWhenIsCold: 0.2
+  selectableMaterial: {fileID: 0}
+  handObjects: {fileID: 0}
+  currentItem: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  lastHit: {fileID: 0}
+  firstItenOnInventory: []
 --- !u!95 &8208832763677803452 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 24fc2c3e62c52bf4e9e63fd980b8e85d, type: 3}

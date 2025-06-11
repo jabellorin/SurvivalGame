@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEditor.Progress;
 using static UnityEngine.UI.Image;
@@ -45,12 +43,12 @@ public class Player : MonoBehaviour {
     private bool isCold = false;
     public ItemName currentItem;
     public LayerMask layerMask;
-   public Transform lastHit = null;
+    public Transform lastHit = null;
     Material previewMaterial = null;
     Vector3 direction;
     private float timeSinceLastHit = 0f;
     private float restoreDelay = 0.05f; // 50 ms de margen
-
+    public bool isAlive=true;
 
 
     public float Health { get => health; set => health = value; }
@@ -63,7 +61,7 @@ public class Player : MonoBehaviour {
     public event Action<int, resourceName> OnItemAddedResourceDict;
     public event Action<int> OnItemRemoveResourceDict;
 
-    public List<Item> firstItenOnInventory;
+   // public List<Item> firstItenOnInventory;
 
 
     // [SerializeField] private float stamina;     // Energía (opcional)
@@ -77,7 +75,7 @@ public class Player : MonoBehaviour {
     private void Awake() {
         Instance = this;
         resourceDict = new();
-          firstItenOnInventory = new();
+       //   firstItenOnInventory = new();
         inventoryList = new();
     }
 
@@ -88,14 +86,14 @@ public class Player : MonoBehaviour {
         Hunger = 100;
         Health = 100;
         Thirst = 100;
-
+        isAlive = true;
         currentItem = ItemName.PickAxe;
 
-        foreach (Item item in firstItenOnInventory) {
+        //foreach (Item item in firstItenOnInventory) {
 
-            AddInventoryItem(item);
+        //    AddInventoryItem(item);
            
-        }
+        //}
     }
 
 
@@ -108,7 +106,7 @@ public class Player : MonoBehaviour {
 
         direction = movePosition.normalized;
 
-        if (direction.magnitude > 0.1f) {
+        if (direction.magnitude > 0.1f && isAlive) {
             _rb.MovePosition(_rb.position + movePosition * speed * Time.deltaTime);
 
             Quaternion rotation = Quaternion.LookRotation(direction);
@@ -132,6 +130,12 @@ public class Player : MonoBehaviour {
         hungerTimer += Time.deltaTime;
         thirstTimer += Time.deltaTime;
        
+        if (Health<=0 && isAlive ) {
+            _animator.SetTrigger("Dead");
+
+            Destroy(GetComponent<Rigidbody>());
+            isAlive = false;
+        }
 
         if (hungerTimer >= maxHungerTimer) {
            

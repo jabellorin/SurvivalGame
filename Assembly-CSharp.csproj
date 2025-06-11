@@ -70,6 +70,8 @@
     <Compile Include="Assets\Scripts\IDropable.cs" />
     <Compile Include="Assets\Scripts\ResourseSO.cs" />
     <Compile Include="Assets\Scripts\ThirstBarVisual.cs" />
+    <Compile Include="Assets\Scripts\PlaceableObjects.cs" />
+    <Compile Include="Assets\Scripts\PlaceableItem.cs" />
     <Compile Include="Assets\Scripts\ItemName.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />

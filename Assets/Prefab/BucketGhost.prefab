@@ -86,10 +86,8 @@ GameObject:
   - component: {fileID: 1062897899230682689}
   - component: {fileID: 4856603557650089052}
   - component: {fileID: 4831889569331141248}
-  - component: {fileID: 1011609758937404174}
-  - component: {fileID: 9041040574150008437}
-  m_Layer: 3
-  m_Name: Bucket(Clone)
+  m_Layer: 2
+  m_Name: BucketGhost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,42 +162,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1011609758937404174
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782290440906662687}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.6035302, y: 1.192023, z: 1.6035302}
-  m_Center: {x: -0.00000011920929, y: 0.5960115, z: -0.00000014901161}
---- !u!114 &9041040574150008437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782290440906662687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 749242f20ed2da448a768230c6b0c9c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amountOfWater: 50
-  waterImage: {fileID: 1980908206412134532}
-  PlaceableItem: {fileID: 11400000, guid: a92fd403a030dfb488e2160a5c80200e, type: 2}
 --- !u!1 &8070224360908082334
 GameObject:
   m_ObjectHideFlags: 0

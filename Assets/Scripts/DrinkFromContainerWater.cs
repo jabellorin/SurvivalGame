@@ -6,6 +6,7 @@ public class DrinkFromContainerWater : MonoBehaviour
 {
     public int amountOfWater;
     public Image waterImage;
+    public PlaceableItem PlaceableItem;
 
     //private void OnCollisionEnter(Collision collision) {
     //    if (collision.collider.CompareTag("Player")) {

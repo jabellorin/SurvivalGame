@@ -51,6 +51,27 @@ public class BuildSystem : MonoBehaviour {
                 
             
         });
+        bucketButtonUI.onClick.AddListener(() =>
+        {
+
+
+            if (IsAbleTocraftItem(ItemName.Bucket)) {
+
+                   ReduceCraftItemFromInventory(ItemName.Bucket);
+                // Player.Instance.AddInventoryItem(GameManager.Instance.GetItemByName(ItemName.PickAxe));
+
+                PlaceableItem placeableItem = GameManager.Instance.GetPlaceableItem(ItemName.Bucket);
+                if (placeableItem!=null) {
+                    PlaceableObjects.Instance.ghostTransform = placeableItem.ghostTransform;
+                    PlaceableObjects.Instance.placeableObject = placeableItem.placeableObject;
+                    PlaceableObjects.Instance.setobject = true;
+                }
+                
+                PlaceableObjects.Instance.CreateGhostPrefab();
+            }
+
+
+        });
 
 
         craftPanelButtonUI.onClick.AddListener(() =>
@@ -72,6 +93,12 @@ public class BuildSystem : MonoBehaviour {
          {
             new CraftItem(3, ItemName.Stone, true),
             new CraftItem(2, ItemName.Loog, true),
+         });
+
+        BuildItem(ItemName.Bucket, new List<CraftItem>
+         {
+            new CraftItem(1, ItemName.Stone, true),
+           // new CraftItem(2, ItemName.Loog, true),
          });
     }
 

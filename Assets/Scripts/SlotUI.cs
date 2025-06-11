@@ -28,6 +28,9 @@ public class SlotUI : MonoBehaviour
                 Player.Instance.SetHandObject(item.itenName);
 
             }
+            else if (item != null && item is Weapon) {
+
+            }
         });
     }
 
